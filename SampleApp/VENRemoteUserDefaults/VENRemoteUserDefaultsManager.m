@@ -24,24 +24,39 @@
 }
 
 
-- (void)updateRemoteDefaultsWithCompletionBlock:(void (^)())completionBlock {
+- (void)updateRemoteDefaultsWithCompletionBlock:(void (^)(BOOL success))completionBlock {
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND,
                                              (unsigned long)NULL), ^(void) {
         if (!self.lastUpdateDate ||
-            [self.lastUpdateDate timeIntervalSinceNow] > self.minimumUpdateInterval) {
+            [[NSDate date] timeIntervalSinceDate:self.lastUpdateDate] > self.minimumUpdateInterval) {
 
             NSDictionary *remoteDefaultsDictionary = [[NSDictionary alloc] initWithContentsOfURL:self.plistURL];
             if ([remoteDefaultsDictionary isKindOfClass:[NSDictionary class]]) {
                 [self populateUserDefaultsWithDictionary:remoteDefaultsDictionary];
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    if (completionBlock) {
+                        completionBlock(YES);
+                    }
+                });
+            }
+            else {
+                //Response not an NSDictionary
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    if (completionBlock) {
+                        completionBlock(NO);
+                    }
+                });
             }
             self.lastUpdateDate = [NSDate date];
+        }
+        else {
+            //Time since last update < Minimum Update Interval
             dispatch_async(dispatch_get_main_queue(), ^{
                 if (completionBlock) {
-                    completionBlock();
+                    completionBlock(NO);
                 }
             });
         }
-
     });
 }
 

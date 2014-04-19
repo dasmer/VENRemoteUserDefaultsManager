@@ -24,6 +24,6 @@
  */
 - (void)updateRemoteDefaults;
 
-- (void)updateRemoteDefaultsWithCompletionBlock:(void(^)())completionBlock;
+- (void)updateRemoteDefaultsWithCompletionBlock:(void(^)(BOOL success))completionBlock;
 
 @end
