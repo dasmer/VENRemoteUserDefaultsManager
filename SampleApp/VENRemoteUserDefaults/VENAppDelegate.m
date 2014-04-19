@@ -8,6 +8,7 @@
     // Override point for customization after application launch.
     NSURL *plistURL = [NSURL URLWithString:@"http://dasmersingh.com/VENRemoteUserDefaults/RemoteUserDefaults.plist"];
     [[VENRemoteUserDefaultsManager sharedManager] setPlistURL:plistURL];
+    [[VENRemoteUserDefaultsManager sharedManager] setMinimumUpdateInterval:30];// 30 seconds
     return YES;
 }
 							
