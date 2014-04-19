@@ -1,0 +1,535 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3A72B6191902AF7700812B77 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A72B6181902AF7700812B77 /* Foundation.framework */; };
+		3A72B61B1902AF7700812B77 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A72B61A1902AF7700812B77 /* CoreGraphics.framework */; };
+		3A72B61D1902AF7700812B77 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A72B61C1902AF7700812B77 /* UIKit.framework */; };
+		3A72B6231902AF7700812B77 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3A72B6211902AF7700812B77 /* InfoPlist.strings */; };
+		3A72B6251902AF7700812B77 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A72B6241902AF7700812B77 /* main.m */; };
+		3A72B6291902AF7700812B77 /* VENAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A72B6281902AF7700812B77 /* VENAppDelegate.m */; };
+		3A72B62C1902AF7700812B77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A72B62A1902AF7700812B77 /* Main.storyboard */; };
+		3A72B62F1902AF7700812B77 /* VENViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A72B62E1902AF7700812B77 /* VENViewController.m */; };
+		3A72B6311902AF7700812B77 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A72B6301902AF7700812B77 /* Images.xcassets */; };
+		3A72B6381902AF7700812B77 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A72B6371902AF7700812B77 /* XCTest.framework */; };
+		3A72B6391902AF7700812B77 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A72B6181902AF7700812B77 /* Foundation.framework */; };
+		3A72B63A1902AF7700812B77 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A72B61C1902AF7700812B77 /* UIKit.framework */; };
+		3A72B6421902AF7700812B77 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3A72B6401902AF7700812B77 /* InfoPlist.strings */; };
+		3A72B65C1902D00200812B77 /* VENRemoteUserDefaultsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A72B65B1902D00200812B77 /* VENRemoteUserDefaultsManager.m */; };
+		3A72B65E1902D28E00812B77 /* VENRemoteUserDefaultsManagerSpecs.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A72B65D1902D28E00812B77 /* VENRemoteUserDefaultsManagerSpecs.m */; };
+		FB86994DE42F4F129A8A32BD /* libPods-VENRemoteUserDefaultsManagerTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E7D7AF26F3F42C8BFF40AF5 /* libPods-VENRemoteUserDefaultsManagerTests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3A72B63B1902AF7700812B77 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A72B60D1902AF7700812B77 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A72B6141902AF7700812B77;
+			remoteInfo = VENRemoteUserDefaults;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3A72B6151902AF7700812B77 /* VENRemoteUserDefaultsManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VENRemoteUserDefaultsManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A72B6181902AF7700812B77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3A72B61A1902AF7700812B77 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3A72B61C1902AF7700812B77 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3A72B6201902AF7700812B77 /* VENRemoteUserDefaultsManager-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VENRemoteUserDefaultsManager-Info.plist"; sourceTree = "<group>"; };
+		3A72B6221902AF7700812B77 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3A72B6241902AF7700812B77 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3A72B6261902AF7700812B77 /* VENRemoteUserDefaultsManager-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VENRemoteUserDefaultsManager-Prefix.pch"; sourceTree = "<group>"; };
+		3A72B6271902AF7700812B77 /* VENAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VENAppDelegate.h; sourceTree = "<group>"; };
+		3A72B6281902AF7700812B77 /* VENAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VENAppDelegate.m; sourceTree = "<group>"; };
+		3A72B62B1902AF7700812B77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3A72B62D1902AF7700812B77 /* VENViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VENViewController.h; sourceTree = "<group>"; };
+		3A72B62E1902AF7700812B77 /* VENViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VENViewController.m; sourceTree = "<group>"; };
+		3A72B6301902AF7700812B77 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3A72B6361902AF7700812B77 /* VENRemoteUserDefaultsManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VENRemoteUserDefaultsManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A72B6371902AF7700812B77 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		3A72B63F1902AF7700812B77 /* VENRemoteUserDefaultsManagerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VENRemoteUserDefaultsManagerTests-Info.plist"; sourceTree = "<group>"; };
+		3A72B6411902AF7700812B77 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3A72B65A1902D00200812B77 /* VENRemoteUserDefaultsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VENRemoteUserDefaultsManager.h; sourceTree = "<group>"; };
+		3A72B65B1902D00200812B77 /* VENRemoteUserDefaultsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VENRemoteUserDefaultsManager.m; sourceTree = "<group>"; };
+		3A72B65D1902D28E00812B77 /* VENRemoteUserDefaultsManagerSpecs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VENRemoteUserDefaultsManagerSpecs.m; sourceTree = "<group>"; };
+		3A72B65F1902D31800812B77 /* VENRemoteUserDefaultsManagerTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VENRemoteUserDefaultsManagerTests-Prefix.pch"; sourceTree = "<group>"; };
+		4E7D7AF26F3F42C8BFF40AF5 /* libPods-VENRemoteUserDefaultsManagerTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VENRemoteUserDefaultsManagerTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5057DF99FB714D90BBB16F7B /* Pods-VENRemoteUserDefaultsManagerTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VENRemoteUserDefaultsManagerTests.xcconfig"; path = "Pods/Pods-VENRemoteUserDefaultsManagerTests.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3A72B6121902AF7700812B77 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A72B61B1902AF7700812B77 /* CoreGraphics.framework in Frameworks */,
+				3A72B61D1902AF7700812B77 /* UIKit.framework in Frameworks */,
+				3A72B6191902AF7700812B77 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A72B6331902AF7700812B77 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A72B6381902AF7700812B77 /* XCTest.framework in Frameworks */,
+				3A72B63A1902AF7700812B77 /* UIKit.framework in Frameworks */,
+				3A72B6391902AF7700812B77 /* Foundation.framework in Frameworks */,
+				FB86994DE42F4F129A8A32BD /* libPods-VENRemoteUserDefaultsManagerTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3A72B60C1902AF7700812B77 = {
+			isa = PBXGroup;
+			children = (
+				3A72B61E1902AF7700812B77 /* VENRemoteUserDefaultsManager */,
+				3A72B63D1902AF7700812B77 /* VENRemoteUserDefaultsManagerTests */,
+				3A72B6171902AF7700812B77 /* Frameworks */,
+				3A72B6161902AF7700812B77 /* Products */,
+				5057DF99FB714D90BBB16F7B /* Pods-VENRemoteUserDefaultsManagerTests.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		3A72B6161902AF7700812B77 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3A72B6151902AF7700812B77 /* VENRemoteUserDefaultsManager.app */,
+				3A72B6361902AF7700812B77 /* VENRemoteUserDefaultsManagerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3A72B6171902AF7700812B77 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3A72B6181902AF7700812B77 /* Foundation.framework */,
+				3A72B61A1902AF7700812B77 /* CoreGraphics.framework */,
+				3A72B61C1902AF7700812B77 /* UIKit.framework */,
+				3A72B6371902AF7700812B77 /* XCTest.framework */,
+				4E7D7AF26F3F42C8BFF40AF5 /* libPods-VENRemoteUserDefaultsManagerTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3A72B61E1902AF7700812B77 /* VENRemoteUserDefaultsManager */ = {
+			isa = PBXGroup;
+			children = (
+				3A72B6271902AF7700812B77 /* VENAppDelegate.h */,
+				3A72B6281902AF7700812B77 /* VENAppDelegate.m */,
+				3A72B62D1902AF7700812B77 /* VENViewController.h */,
+				3A72B62E1902AF7700812B77 /* VENViewController.m */,
+				3A72B62A1902AF7700812B77 /* Main.storyboard */,
+				3A72B6301902AF7700812B77 /* Images.xcassets */,
+				3A72B61F1902AF7700812B77 /* Supporting Files */,
+				3A72B6501902B05100812B77 /* VENRemoteUserDefaultsManager */,
+			);
+			name = VENRemoteUserDefaultsManager;
+			path = VENRemoteUserDefaults;
+			sourceTree = "<group>";
+		};
+		3A72B61F1902AF7700812B77 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3A72B6201902AF7700812B77 /* VENRemoteUserDefaultsManager-Info.plist */,
+				3A72B6211902AF7700812B77 /* InfoPlist.strings */,
+				3A72B6241902AF7700812B77 /* main.m */,
+				3A72B6261902AF7700812B77 /* VENRemoteUserDefaultsManager-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3A72B63D1902AF7700812B77 /* VENRemoteUserDefaultsManagerTests */ = {
+			isa = PBXGroup;
+			children = (
+				3A72B63E1902AF7700812B77 /* Supporting Files */,
+				3A72B65D1902D28E00812B77 /* VENRemoteUserDefaultsManagerSpecs.m */,
+			);
+			name = VENRemoteUserDefaultsManagerTests;
+			path = VENRemoteUserDefaultsTests;
+			sourceTree = "<group>";
+		};
+		3A72B63E1902AF7700812B77 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3A72B65F1902D31800812B77 /* VENRemoteUserDefaultsManagerTests-Prefix.pch */,
+				3A72B63F1902AF7700812B77 /* VENRemoteUserDefaultsManagerTests-Info.plist */,
+				3A72B6401902AF7700812B77 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3A72B6501902B05100812B77 /* VENRemoteUserDefaultsManager */ = {
+			isa = PBXGroup;
+			children = (
+				3A72B65A1902D00200812B77 /* VENRemoteUserDefaultsManager.h */,
+				3A72B65B1902D00200812B77 /* VENRemoteUserDefaultsManager.m */,
+			);
+			name = VENRemoteUserDefaultsManager;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3A72B6141902AF7700812B77 /* VENRemoteUserDefaultsManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A72B6471902AF7700812B77 /* Build configuration list for PBXNativeTarget "VENRemoteUserDefaultsManager" */;
+			buildPhases = (
+				3A72B6111902AF7700812B77 /* Sources */,
+				3A72B6121902AF7700812B77 /* Frameworks */,
+				3A72B6131902AF7700812B77 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VENRemoteUserDefaultsManager;
+			productName = VENRemoteUserDefaults;
+			productReference = 3A72B6151902AF7700812B77 /* VENRemoteUserDefaultsManager.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3A72B6351902AF7700812B77 /* VENRemoteUserDefaultsManagerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A72B64A1902AF7700812B77 /* Build configuration list for PBXNativeTarget "VENRemoteUserDefaultsManagerTests" */;
+			buildPhases = (
+				AB77D0DF12FB4DBE895A2594 /* Check Pods Manifest.lock */,
+				3A72B6321902AF7700812B77 /* Sources */,
+				3A72B6331902AF7700812B77 /* Frameworks */,
+				3A72B6341902AF7700812B77 /* Resources */,
+				CBA61375733E451B9A374C5A /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3A72B63C1902AF7700812B77 /* PBXTargetDependency */,
+			);
+			name = VENRemoteUserDefaultsManagerTests;
+			productName = VENRemoteUserDefaultsTests;
+			productReference = 3A72B6361902AF7700812B77 /* VENRemoteUserDefaultsManagerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3A72B60D1902AF7700812B77 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = VEN;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Venmo;
+				TargetAttributes = {
+					3A72B6351902AF7700812B77 = {
+						TestTargetID = 3A72B6141902AF7700812B77;
+					};
+				};
+			};
+			buildConfigurationList = 3A72B6101902AF7700812B77 /* Build configuration list for PBXProject "VENRemoteUserDefaultsManager" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3A72B60C1902AF7700812B77;
+			productRefGroup = 3A72B6161902AF7700812B77 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3A72B6141902AF7700812B77 /* VENRemoteUserDefaultsManager */,
+				3A72B6351902AF7700812B77 /* VENRemoteUserDefaultsManagerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3A72B6131902AF7700812B77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A72B6311902AF7700812B77 /* Images.xcassets in Resources */,
+				3A72B6231902AF7700812B77 /* InfoPlist.strings in Resources */,
+				3A72B62C1902AF7700812B77 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A72B6341902AF7700812B77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A72B6421902AF7700812B77 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AB77D0DF12FB4DBE895A2594 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CBA61375733E451B9A374C5A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-VENRemoteUserDefaultsManagerTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3A72B6111902AF7700812B77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A72B65C1902D00200812B77 /* VENRemoteUserDefaultsManager.m in Sources */,
+				3A72B62F1902AF7700812B77 /* VENViewController.m in Sources */,
+				3A72B6291902AF7700812B77 /* VENAppDelegate.m in Sources */,
+				3A72B6251902AF7700812B77 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A72B6321902AF7700812B77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A72B65E1902D28E00812B77 /* VENRemoteUserDefaultsManagerSpecs.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3A72B63C1902AF7700812B77 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3A72B6141902AF7700812B77 /* VENRemoteUserDefaultsManager */;
+			targetProxy = 3A72B63B1902AF7700812B77 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3A72B6211902AF7700812B77 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A72B6221902AF7700812B77 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3A72B62A1902AF7700812B77 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A72B62B1902AF7700812B77 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3A72B6401902AF7700812B77 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A72B6411902AF7700812B77 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3A72B6451902AF7700812B77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3A72B6461902AF7700812B77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3A72B6481902AF7700812B77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VENRemoteUserDefaults/VENRemoteUserDefaultsManager-Prefix.pch";
+				INFOPLIST_FILE = "VENRemoteUserDefaults/VENRemoteUserDefaultsManager-Info.plist";
+				PRODUCT_NAME = VENRemoteUserDefaultsManager;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3A72B6491902AF7700812B77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VENRemoteUserDefaults/VENRemoteUserDefaultsManager-Prefix.pch";
+				INFOPLIST_FILE = "VENRemoteUserDefaults/VENRemoteUserDefaultsManager-Info.plist";
+				PRODUCT_NAME = VENRemoteUserDefaultsManager;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		3A72B64B1902AF7700812B77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5057DF99FB714D90BBB16F7B /* Pods-VENRemoteUserDefaultsManagerTests.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/VENRemoteUserDefaultsManager.app/VENRemoteUserDefaultsManager";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VENRemoteUserDefaultsTests/VENRemoteUserDefaultsManagerTests-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "VENRemoteUserDefaultsTests/VENRemoteUserDefaultsManagerTests-Info.plist";
+				PRODUCT_NAME = VENRemoteUserDefaultsManagerTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		3A72B64C1902AF7700812B77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5057DF99FB714D90BBB16F7B /* Pods-VENRemoteUserDefaultsManagerTests.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/VENRemoteUserDefaultsManager.app/VENRemoteUserDefaultsManager";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VENRemoteUserDefaultsTests/VENRemoteUserDefaultsManagerTests-Prefix.pch";
+				INFOPLIST_FILE = "VENRemoteUserDefaultsTests/VENRemoteUserDefaultsManagerTests-Info.plist";
+				PRODUCT_NAME = VENRemoteUserDefaultsManagerTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3A72B6101902AF7700812B77 /* Build configuration list for PBXProject "VENRemoteUserDefaultsManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A72B6451902AF7700812B77 /* Debug */,
+				3A72B6461902AF7700812B77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A72B6471902AF7700812B77 /* Build configuration list for PBXNativeTarget "VENRemoteUserDefaultsManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A72B6481902AF7700812B77 /* Debug */,
+				3A72B6491902AF7700812B77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A72B64A1902AF7700812B77 /* Build configuration list for PBXNativeTarget "VENRemoteUserDefaultsManagerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A72B64B1902AF7700812B77 /* Debug */,
+				3A72B64C1902AF7700812B77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3A72B60D1902AF7700812B77 /* Project object */;
+}
