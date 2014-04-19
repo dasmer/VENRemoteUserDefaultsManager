@@ -1,7 +1,12 @@
 VENRemoteUserDefaultsManager
 ============================
 
-Update your app's NSUserDefaults remotely
+VENRemoteUserDefaultsManager enables remote creation and manipulation of NSUserDefaults:
+- Enable and disable different routes in your app
+- Rename UILabels, UIButtons, UIAlertview titles and messages to test user behavior without submitting a new app version
+- User test new features in production and have the ability to remotely revert them in cases of unexpected consequences
+
+
 
 
 ### Contributing
