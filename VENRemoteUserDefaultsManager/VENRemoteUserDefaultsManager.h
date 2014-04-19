@@ -24,6 +24,9 @@
  */
 - (void)updateRemoteDefaults;
 
+/**
+ * Updates the userDefaults in a background queue. The completion block will always be called. SUCCESS is NO if the time since last update is greater than the minimumUpdateInterval, or if the plist file is not a valid NSDictionary, and YES otherwise.
+ */
 - (void)updateRemoteDefaultsWithCompletionBlock:(void(^)(BOOL success))completionBlock;
 
 @end
