@@ -20,22 +20,55 @@
 
 
 - (void)updateRemoteDefaults {
-    if (!self.lastUpdateDate ||
-        [self.lastUpdateDate timeIntervalSinceNow] > self.minimumUpdateInterval) {
-        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND,
-                                                 (unsigned long)NULL), ^(void) {
+    [self updateRemoteDefaultsWithCompletionBlock:nil];
+}
+
+
+- (void)updateRemoteDefaultsWithCompletionBlock:(void (^)(BOOL success))completionBlock {
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND,
+                                             (unsigned long)NULL), ^(void) {
+        if (!self.lastUpdateDate ||
+            [[NSDate date] timeIntervalSinceDate:self.lastUpdateDate] > self.minimumUpdateInterval) {
+
             NSDictionary *remoteDefaultsDictionary = [[NSDictionary alloc] initWithContentsOfURL:self.plistURL];
-            NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
-            if ([remoteDefaultsDictionary respondsToSelector:@selector(objectForKeyedSubscript:)]) {
-                for (NSString *key in [remoteDefaultsDictionary allKeys]) {
-                    NSObject *object = remoteDefaultsDictionary[key];
-                    [userDefaults setObject:object forKey:key];
-                }
+            if ([remoteDefaultsDictionary isKindOfClass:[NSDictionary class]]) {
+                self.lastUpdateDate = [NSDate date];
+                [self populateUserDefaultsWithDictionary:remoteDefaultsDictionary];
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    if (completionBlock) {
+                        completionBlock(YES);
+                    }
+                });
             }
-            [userDefaults synchronize];
-            self.lastUpdateDate = [NSDate date];
-        });
+            else {
+                //Response not an NSDictionary
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    if (completionBlock) {
+                        completionBlock(NO);
+                    }
+                });
+            }
+        }
+        else {
+            //Time since last update < Minimum Update Interval
+            dispatch_async(dispatch_get_main_queue(), ^{
+                if (completionBlock) {
+                    completionBlock(NO);
+                }
+            });
+        }
+    });
+}
+
+- (void)populateUserDefaultsWithDictionary:(NSDictionary *)dictionary {
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+
+    for (NSString *key in [dictionary allKeys]) {
+        NSObject *object = dictionary[key];
+        [userDefaults setObject:object forKey:key];
     }
+    [userDefaults synchronize];
+    
 }
 
 @end

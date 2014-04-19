@@ -20,10 +20,10 @@
 		3A72B6391902AF7700812B77 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A72B6181902AF7700812B77 /* Foundation.framework */; };
 		3A72B63A1902AF7700812B77 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A72B61C1902AF7700812B77 /* UIKit.framework */; };
 		3A72B6421902AF7700812B77 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3A72B6401902AF7700812B77 /* InfoPlist.strings */; };
-		3A72B65C1902D00200812B77 /* VENRemoteUserDefaultsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A72B65B1902D00200812B77 /* VENRemoteUserDefaultsManager.m */; };
 		3A72B65E1902D28E00812B77 /* VENRemoteUserDefaultsManagerSpecs.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A72B65D1902D28E00812B77 /* VENRemoteUserDefaultsManagerSpecs.m */; };
 		3A825F731902FF0100E22E88 /* test1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3A825F721902FF0100E22E88 /* test1.plist */; };
 		3A825F751903101700E22E88 /* test2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3A825F741903101700E22E88 /* test2.plist */; };
+		3A825F78190332E600E22E88 /* VENRemoteUserDefaultsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A825F77190332E600E22E88 /* VENRemoteUserDefaultsManager.m */; };
 		FB86994DE42F4F129A8A32BD /* libPods-VENRemoteUserDefaultsManagerTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E7D7AF26F3F42C8BFF40AF5 /* libPods-VENRemoteUserDefaultsManagerTests.a */; };
 /* End PBXBuildFile section */
 
@@ -56,12 +56,12 @@
 		3A72B6371902AF7700812B77 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		3A72B63F1902AF7700812B77 /* VENRemoteUserDefaultsManagerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VENRemoteUserDefaultsManagerTests-Info.plist"; sourceTree = "<group>"; };
 		3A72B6411902AF7700812B77 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		3A72B65A1902D00200812B77 /* VENRemoteUserDefaultsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VENRemoteUserDefaultsManager.h; sourceTree = "<group>"; };
-		3A72B65B1902D00200812B77 /* VENRemoteUserDefaultsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VENRemoteUserDefaultsManager.m; sourceTree = "<group>"; };
 		3A72B65D1902D28E00812B77 /* VENRemoteUserDefaultsManagerSpecs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VENRemoteUserDefaultsManagerSpecs.m; sourceTree = "<group>"; };
 		3A72B65F1902D31800812B77 /* VENRemoteUserDefaultsManagerTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VENRemoteUserDefaultsManagerTests-Prefix.pch"; sourceTree = "<group>"; };
 		3A825F721902FF0100E22E88 /* test1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = test1.plist; sourceTree = "<group>"; };
 		3A825F741903101700E22E88 /* test2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = test2.plist; sourceTree = "<group>"; };
+		3A825F76190332E600E22E88 /* VENRemoteUserDefaultsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VENRemoteUserDefaultsManager.h; path = ../../VENRemoteUserDefaultsManager/VENRemoteUserDefaultsManager.h; sourceTree = "<group>"; };
+		3A825F77190332E600E22E88 /* VENRemoteUserDefaultsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VENRemoteUserDefaultsManager.m; path = ../../VENRemoteUserDefaultsManager/VENRemoteUserDefaultsManager.m; sourceTree = "<group>"; };
 		4E7D7AF26F3F42C8BFF40AF5 /* libPods-VENRemoteUserDefaultsManagerTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VENRemoteUserDefaultsManagerTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5057DF99FB714D90BBB16F7B /* Pods-VENRemoteUserDefaultsManagerTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VENRemoteUserDefaultsManagerTests.xcconfig"; path = "Pods/Pods-VENRemoteUserDefaultsManagerTests.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -175,8 +175,8 @@
 		3A72B6501902B05100812B77 /* VENRemoteUserDefaultsManager */ = {
 			isa = PBXGroup;
 			children = (
-				3A72B65A1902D00200812B77 /* VENRemoteUserDefaultsManager.h */,
-				3A72B65B1902D00200812B77 /* VENRemoteUserDefaultsManager.m */,
+				3A825F76190332E600E22E88 /* VENRemoteUserDefaultsManager.h */,
+				3A825F77190332E600E22E88 /* VENRemoteUserDefaultsManager.m */,
 			);
 			name = VENRemoteUserDefaultsManager;
 			sourceTree = "<group>";
@@ -316,7 +316,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A72B65C1902D00200812B77 /* VENRemoteUserDefaultsManager.m in Sources */,
+				3A825F78190332E600E22E88 /* VENRemoteUserDefaultsManager.m in Sources */,
 				3A72B62F1902AF7700812B77 /* VENViewController.m in Sources */,
 				3A72B6291902AF7700812B77 /* VENAppDelegate.m in Sources */,
 				3A72B6251902AF7700812B77 /* main.m in Sources */,
