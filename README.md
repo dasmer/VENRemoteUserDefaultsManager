@@ -23,7 +23,7 @@ To request a NSUserDefaults update from the network, call ```updateRemoteDefault
     [[VENRemoteUserDefaultsManager sharedManager] updateRemoteDefaults];
 }
  ```
-On update, the key/value pairs from the remote plist will become key/value pairs in the ```[NSUserDefaults standardDefaults]```.
+On update, the key/value pairs from the remote plist will become key/value pairs in the NSUserDefaults' standardDefaults.
 
 
 ### Contributing
