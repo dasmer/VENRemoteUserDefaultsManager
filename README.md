@@ -12,7 +12,7 @@ Create a .plist file with a root NSDictionary. Set the dictionary's keys and val
 In your App Delegate's ```didFinishLaunchingWithOptions:``` delegate method, set the VENRemoteUserDefaultsManager's URL of the plist file. Also, set a minimum update time interval to avoid excess server requests. I.e: 
 
 ```objc
-    NSURL *plistURL = [NSURL URLWithString:@"http://dasmersingh.com/VENRemoteUserDefaults/RemoteUserDefaults.plist"];
+    NSURL *plistURL = [NSURL URLWithString:@"http://dasmersingh.com/VENRemoteUserDefaults/test1.plist"];
     [[VENRemoteUserDefaultsManager sharedManager] setPlistURL:plistURL];
     [[VENRemoteUserDefaultsManager sharedManager] setMinimumUpdateInterval:60*60*7]; // 7 Hours
  ```
