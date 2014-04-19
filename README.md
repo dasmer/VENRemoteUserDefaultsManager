@@ -6,12 +6,29 @@ VENRemoteUserDefaultsManager enables remote creation and manipulation of NSUserD
 - Rename UILabels, UIButtons, UIAlertview titles and messages to test user behavior without submitting a new app version
 - User test new features in production and have the ability to remotely revert them in cases of unexpected consequences
 
+### Usage
+Create a .plist file with a root NSDictionary. Set the dictionary's keys and values. Save the .plist on a web server.
+
+In your App Delegate's ```didFinishLaunchingWithOptions:``` delegate method, set the VENRemoteUserDefaultsManager's URL of the plist file. Also, set a minimum update time interval to avoid excess server requests. I.e: 
+
+```objc
+    NSURL *plistURL = [NSURL URLWithString:@"http://dasmersingh.com/VENRemoteUserDefaults/RemoteUserDefaults.plist"];
+    [[VENRemoteUserDefaultsManager sharedManager] setPlistURL:plistURL];
+    [[VENRemoteUserDefaultsManager sharedManager] setMinimumUpdateInterval:60*60*7]; // 7 Hours
+ ```
+To request a NSUserDefaults update from the network, call ```updateRemoteDefaults```. This will create a server request on a background thread if the time since last update is greater than the ```minimumUpdateInterval```. A good place to call this method may be in your App Delegate's ```didBecomeActive:``` delegate method. I.e:  
+```objc
+- (void)applicationDidBecomeActive:(UIApplication *)application
+{
+    [[VENRemoteUserDefaultsManager sharedManager] updateRemoteDefaults];
+}
+ ```
 
 
 
 ### Contributing
 
-We'd love to see your ideas for improving VENPromotionsManager! The best way to contribute is by submitting a pull request. We'll do our best to respond to your patch as soon as possible. You can also submit a new Github issue if you find bugs or have questions. 
+We'd love to see your ideas for improving VENRemoteUserDefaultsManager! The best way to contribute is by submitting a pull request. We'll do our best to respond to your patch as soon as possible. You can also submit a new Github issue if you find bugs or have questions. 
 
 Please make sure to follow our general coding style and add test coverage for new features!
 
