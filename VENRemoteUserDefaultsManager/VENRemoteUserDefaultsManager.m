@@ -62,13 +62,11 @@
 
 - (void)populateUserDefaultsWithDictionary:(NSDictionary *)dictionary {
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
-
     for (NSString *key in [dictionary allKeys]) {
         NSObject *object = dictionary[key];
         [userDefaults setObject:object forKey:key];
     }
     [userDefaults synchronize];
-    
 }
 
 @end
